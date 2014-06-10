@@ -1,6 +1,7 @@
-FROM wiltan/debian-tiny
+FROM debian:jessie
 MAINTAINER James Turnbull "james@example.com"
-ENV REFRESHED_AT 2013-08-01
+ENV REFRESHED_AT 2014-06-01
 RUN apt-get update
-RUN apt-get -y install ruby rubygems rake
-RUN gem install --no-rdoc --no-ri rspec ci_reporter
+RUN apt-get -y install ruby rake
+RUN gem install --no-rdoc --no-ri rspec -v 2.99.0
+RUN gem install --no-rdoc --no-ri ci_reporter
