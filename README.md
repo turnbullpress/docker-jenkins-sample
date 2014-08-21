@@ -1,4 +1,4 @@
-docker-jenkins-sample
+Docker-jenkins-sample
 =====================
 
-Sample Ruby RSpec for testing Jenkins with Docker
+Sample Ruby RSpec application for testing Jenkins with Docker.
