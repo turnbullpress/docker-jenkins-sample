@@ -2,5 +2,4 @@ FROM centos:latest
 MAINTAINER James Turnbull "james@example.com"
 ENV REFRESHED_AT 2014-06-01
 RUN yum -y install ruby rubygems rubygem-rake
-RUN gem sources -r https://rubygems.org && gem sources -a http://rubygems.org
-RUN gem install --no-rdoc --no-ri rspec ci_reporter_rspec
+RUN gem install --no-rdoc --no-ri --source http://rubygems.org rspec ci_reporter_rspec
