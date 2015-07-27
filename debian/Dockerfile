@@ -3,4 +3,5 @@ MAINTAINER James Turnbull "james@example.com"
 ENV REFRESHED_AT 2014-06-01
 RUN apt-get update
 RUN apt-get -y install ruby rake
+RUN gem sources -r https://rubygems.org && gem sources -a http://rubygems.org
 RUN gem install --no-rdoc --no-ri rspec ci_reporter_rspec
