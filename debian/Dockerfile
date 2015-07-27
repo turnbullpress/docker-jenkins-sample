@@ -1,6 +1,6 @@
 FROM debian:jessie
 MAINTAINER James Turnbull "james@example.com"
-ENV REFRESHED_AT 2014-06-01
+ENV REFRESHED_AT 2014-07-27
 RUN apt-get update
 RUN apt-get -y install ruby rake
 RUN gem sources --remove https://rubygems.org/ ; gem sources -a http://ruby.taobao.org/
